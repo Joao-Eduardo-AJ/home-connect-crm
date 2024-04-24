@@ -1,7 +1,10 @@
-export default function Home() {
-  return (
-    <main>
-      <h1>hello world!</h1>
-    </main>
-  );
-}
+import Link from "next/link";
+
+const Home = () => (
+  <div>
+    <h1>Home</h1>
+    <Link href="/login">Login</Link>
+  </div>
+);
+
+export default Home;
