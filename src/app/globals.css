@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    transition: all 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space-grotesk);
+  line-height: 120%;
+  cursor: default;
+  letter-spacing: -0.03em;
+}
+
+p, span {
+  font-family: var(--font-inter);
+  line-height: 150%;
+  cursor: default;
+}

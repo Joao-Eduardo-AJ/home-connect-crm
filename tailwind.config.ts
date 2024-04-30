@@ -9,20 +9,32 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        esm: "450px"
+      },
       colors: {
-        background: "#FFFCF1",
+        "background-light": "#F2F6FF",
+        "background-dark": "#0e0f0f",
 
-        "primary-100": "#FFFCF1",
-        "primary-200": "#FEECC7",
-        "primary-300": "#FDCF6E",
-        "primary-400": "#FDBD4C",
-        "primary-500": "#FCA523",
+        "primary-100": "#F2F6FF",
+        "primary-200": "#D9E4FF",
+        "primary-300": "#A6C1FF",
+        "primary-400": "#598BFF",
+        "primary-500": "#2E64FF",
+        "primary-600": "#004BFF",
+        "primary-700": "#003BC2",
+        "primary-800": "#002E97",
+        "primary-900": "#001E65",
 
-        "seccondary-100": "#00897E",
-        "seccondary-200": "#0C766F",
-        "seccondary-300": "#036C65",
-        "seccondary-400": "#095F59",
-        "seccondary-500": "#003735",
+        "secondary-100": "#FFF6E0",
+        "secondary-200": "#FFE0A8",
+        "secondary-300": "#FFCD7A",
+        "secondary-400": "#FFB946",
+        "secondary-500": "#FFA523",
+        "secondary-600": "#E18807",
+        "secondary-700": "#B76C00",
+        "secondary-800": "#8E5100",
+        "secondary-900": "#5F3200",
 
         "text-100": "#F5F6FA",
         "text-200": "#DFE1E8",
