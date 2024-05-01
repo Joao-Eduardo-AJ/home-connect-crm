@@ -37,32 +37,24 @@ span {
 
 @keyframes ball1 {
   0% {
-    left: -20%;
-    top: 30%;
-  }
-  50% {
-    left: 20%;
-    top: 15%;
+    left: -8%;
+    top: -12%;
   }
   100% {
-    left: 50%;
-    top: -25%;
+    left: -12%;
+    top: -16%;
     transform: rotate(360deg);
   }
 }
 
 @keyframes ball2 {
   0% {
-    right: -20%;
-    bottom: 30%;
-  }
-  50% {
-    right: 20%;
-    bottom: 15%;
+    right: -10%;
+    bottom: -14%;
   }
   100% {
-    right: 40%;
-    bottom: -25%;
+    right: -12%;
+    bottom: -16%;
     transform: rotate(360deg);
   }
 }
