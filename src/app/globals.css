@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 h1,
@@ -18,8 +18,51 @@ h6 {
   letter-spacing: -0.03em;
 }
 
-p, span {
+p,
+span {
   font-family: var(--font-inter);
   line-height: 150%;
   cursor: default;
+}
+
+.floating-ball-1 {
+  border-radius: 29% 71% 30% 70% / 58% 47% 53% 42%;
+  animation: ball1 60s linear infinite alternate;
+}
+
+.floating-ball-2 {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: ball2 60s linear infinite alternate;
+}
+
+@keyframes ball1 {
+  0% {
+    left: -20%;
+    top: 30%;
+  }
+  50% {
+    left: 20%;
+    top: 15%;
+  }
+  100% {
+    left: 50%;
+    top: -25%;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    right: -20%;
+    bottom: 30%;
+  }
+  50% {
+    right: 20%;
+    bottom: 15%;
+  }
+  100% {
+    right: 40%;
+    bottom: -25%;
+    transform: rotate(360deg);
+  }
 }
