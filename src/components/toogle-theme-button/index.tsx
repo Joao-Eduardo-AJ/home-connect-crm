@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function ToogleThemeButton() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -21,7 +22,18 @@ function ToogleThemeButton() {
     document.documentElement.classList.add(theme);
   }, [theme]);
 
-  return <button onClick={toogleTheme}>Toggle theme</button>;
+  return (
+    <button
+      onClick={toogleTheme}
+      className="flex items-center gap-1 text-gray-600 hover:underline"
+    >
+      <DarkModeIcon
+        fontSize="small"
+        className={`transition-transform duration-300 ${theme === "dark" ? "rotate-180" : "rotate-0"}`}
+      />
+      {theme === "dark" ? "light" : "dark"} mode
+    </button>
+  );
 }
 
 export default ToogleThemeButton;

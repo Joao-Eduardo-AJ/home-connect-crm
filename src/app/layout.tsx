@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import ToogleThemeButton from "@/components/toogle-theme-button";
 
 const inter = Inter({
   display: "swap",
@@ -33,7 +32,6 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} overflow-hidden bg-background-light dark:bg-background-dark`}
       >
         {children}
-        <ToogleThemeButton />
       </body>
     </html>
   );
