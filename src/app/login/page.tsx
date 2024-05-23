@@ -40,6 +40,7 @@ const Login = () => (
         width={480}
         height={480}
         className="absolute -left-20 bottom-4"
+        priority
       />
     </aside>
   </main>
