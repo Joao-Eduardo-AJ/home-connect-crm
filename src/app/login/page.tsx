@@ -4,7 +4,7 @@ import ToogleThemeButton from "@/components/toogle-theme-button";
 import Image from "next/image";
 
 const Login = () => (
-  <main className="flex h-svh items-center justify-between overflow-hidden text-gray-800">
+  <main className="relative flex h-svh items-center justify-between overflow-hidden text-gray-800">
     <FloatingBalls />
     <section className="grid w-full max-w-lg gap-4 rounded-lg bg-background-light p-4 text-sm text-text-900 dark:bg-background-dark dark:text-text-300 esm:mx-14 esm:p-8 esm:text-base esm:shadow-2xl sm:ml-[10%] md:mx-auto">
       <h1 className="text-3xl font-bold esm:text-4xl">Login</h1>

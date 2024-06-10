@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} overflow-hidden bg-background-light dark:bg-background-dark`}
+        className={`${inter.variable} ${spaceGrotesk.variable} bg-background-light dark:bg-background-dark`}
       >
         {children}
       </body>
