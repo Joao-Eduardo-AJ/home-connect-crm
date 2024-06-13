@@ -25,6 +25,7 @@ const config: Config = {
         "primary-700": "#003BC2",
         "primary-800": "#002E97",
         "primary-900": "#001E65",
+        "primary-950": "#001852",
         "primary-1000": "#00123b",
 
         "secondary-100": "#FFF6E0",
@@ -37,17 +38,17 @@ const config: Config = {
         "secondary-800": "#8E5100",
         "secondary-900": "#5F3200",
 
-        "text-100": "#F5F6FA",
-        "text-200": "#DFE1E8",
-        "text-300": "#C0C3CC",
-        "text-400": "#ABAFBA",
-        "text-500": "#979BA6",
-        "text-600": "#787C87",
-        "text-700": "#5C5F69",
-        "text-800": "#393B42",
-        "text-850": "#232529",
-        "text-900": "#0A0B0D",
-        "text-950": "#030009"
+        "gray-100": "#F5F6FA",
+        "gray-200": "#DFE1E8",
+        "gray-300": "#C0C3CC",
+        "gray-400": "#ABAFBA",
+        "gray-500": "#979BA6",
+        "gray-600": "#787C87",
+        "gray-700": "#5C5F69",
+        "gray-800": "#393B42",
+        "gray-850": "#232529",
+        "gray-900": "#0A0B0D",
+        "gray-950": "#030009"
       }
     }
   },

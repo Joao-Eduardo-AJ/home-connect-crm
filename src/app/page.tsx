@@ -1,6 +1,5 @@
-import { TD, TH } from "@/components/table-components";
+import { TD, TH } from "@/components";
 import { clients } from "@/mock";
-import Link from "next/link";
 
 const Home = () => (
   <main className="flex flex-col items-center p-4">
@@ -27,7 +26,6 @@ const Home = () => (
         ))}
       </tbody>
     </table>
-    <Link href="/login">Login</Link>
   </main>
 );
 

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Aside } from "./_components/aside";
+import { Header } from "./_components/header";
 
 const inter = Inter({
   display: "swap",
@@ -37,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} bg-background-light dark:bg-background-dark`}
+        className={`${inter.variable} ${spaceGrotesk.variable} overflow-hidden bg-background-light dark:bg-background-dark`}
       >
+        <Header />
         {children}
+        <Aside />
       </body>
     </html>
   );
