@@ -2,7 +2,7 @@ import { type TdHTMLAttributes } from "react";
 import { type VariantProps, tv } from "tailwind-variants";
 
 export const cell = tv({
-  base: "border-collapse border p-2 border-primary-200 dark:border-primary-900 text-gray-900 dark:text-gray-200",
+  base: "border-collapse border px-2 border-primary-200 dark:border-primary-900 text-gray-900 dark:text-gray-200",
   variants: {
     type: {
       hiddenSM: "hidden sm:table-cell",

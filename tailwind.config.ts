@@ -28,16 +28,6 @@ const config: Config = {
         "primary-950": "#001852",
         "primary-1000": "#00123b",
 
-        "secondary-100": "#FFF6E0",
-        "secondary-200": "#FFE0A8",
-        "secondary-300": "#FFCD7A",
-        "secondary-400": "#FFB946",
-        "secondary-500": "#FFA523",
-        "secondary-600": "#E18807",
-        "secondary-700": "#B76C00",
-        "secondary-800": "#8E5100",
-        "secondary-900": "#5F3200",
-
         "gray-100": "#F5F6FA",
         "gray-200": "#DFE1E8",
         "gray-300": "#C0C3CC",
@@ -48,7 +38,11 @@ const config: Config = {
         "gray-800": "#393B42",
         "gray-850": "#232529",
         "gray-900": "#0A0B0D",
-        "gray-950": "#030009"
+        "gray-950": "#030009",
+
+        "warning": "#FFA523",
+        "error": "#F51C23",
+        "success": "#4CCA22",
       }
     }
   },

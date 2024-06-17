@@ -1,5 +1,7 @@
 import { TD, TH } from "@/components";
+import { IconButton } from "@/components/icon-button";
 import { clients } from "@/mock";
+import { Edit, EditOutlined } from "@mui/icons-material";
 
 const Home = () => (
   <main className="flex flex-col items-center p-4">
@@ -11,6 +13,7 @@ const Home = () => (
           <TH variant={{ type: "hiddenMD" }}>CPF</TH>
           <TH>Contato</TH>
           <TH variant={{ type: "hiddenSM" }}>Endereço</TH>
+          <TH />
         </tr>
       </thead>
       <tbody>
@@ -19,9 +22,10 @@ const Home = () => (
             <TD>{client.fullName}</TD>
             <TD variant={{ type: "hiddenMD" }}>{client.cpf ?? ""}</TD>
             <TD>{client.contact.email}</TD>
-            <TD
-              variant={{ type: "hiddenSM" }}
-            >{`${client.address.state} / ${client.address.city}`}</TD>
+            <TD>{`${client.address.state} / ${client.address.city}`}</TD>
+            <TD>
+              <IconButton><EditOutlined fontSize="small" /></IconButton>
+            </TD>
           </tr>
         ))}
       </tbody>
