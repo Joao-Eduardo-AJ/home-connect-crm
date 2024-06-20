@@ -12,7 +12,7 @@ import { usePathname, useRouter } from "next/navigation";
 export function Aside() {
   const pathname = usePathname();
 
-  if (pathname === "/login") {
+  if (pathname === "login") {
     return <></>;
   }
 
@@ -55,7 +55,7 @@ export const Nav = () => {
         <Button
           variant={{ type: "text" }}
           onClick={() => {
-            router.push("users");
+            router.push("/users");
           }}
         >
           Listagem de Usuáros <PeopleAltOutlined fontSize="small" />

@@ -2,12 +2,14 @@ import { type IUser } from "@/services/repositorys/user/type";
 
 export const clients: IUser[] = [
   {
+    id: 2,
     fullName: "Ana Clara Souza",
     cpf: "999.999.999-99",
     contact: { email: "anaclara@gmail.com", phoneNumber: "(11) 9 8765-4321" },
     address: { city: "São Paulo", state: "SP" }
   },
   {
+    id: 3,
     fullName: "Bruno Oliveira",
     cpf: "999.999.999-99",
     contact: {
@@ -17,12 +19,14 @@ export const clients: IUser[] = [
     address: { city: "Rio de Janeiro", state: "RJ" }
   },
   {
+    id: 4,
     fullName: "Carla Pereira",
     cpf: "999.999.999-99",
     contact: { email: "carla.p@gmail.com", phoneNumber: "(31) 9 9876-5432" },
     address: { city: "Belo Horizonte", state: "MG" }
   },
   {
+    id: 5,
     fullName: "Daniel Costa",
     cpf: "999.999.999-99",
     contact: {
@@ -32,6 +36,7 @@ export const clients: IUser[] = [
     address: { city: "Porto Alegre", state: "RS" }
   },
   {
+    id: 6,
     fullName: "Eliana Silva",
     cpf: "999.999.999-99",
     contact: {
@@ -41,6 +46,7 @@ export const clients: IUser[] = [
     address: { city: "Recife", state: "PE" }
   },
   {
+    id: 7,
     fullName: "Fernando Lima",
     cpf: "999.999.999-99",
     contact: {
@@ -50,6 +56,7 @@ export const clients: IUser[] = [
     address: { city: "Salvador", state: "BA" }
   },
   {
+    id: 8,
     fullName: "Gabriela Santos",
     cpf: "999.999.999-99",
     contact: {
@@ -59,6 +66,7 @@ export const clients: IUser[] = [
     address: { city: "Curitiba", state: "PR" }
   },
   {
+    id: 9,
     fullName: "Henrique Ferreira",
     cpf: "999.999.999-99",
     contact: {
@@ -68,6 +76,7 @@ export const clients: IUser[] = [
     address: { city: "Goiânia", state: "GO" }
   },
   {
+    id: 10,
     fullName: "Isabela Mendes",
     cpf: "999.999.999-99",
     contact: {
@@ -77,6 +86,7 @@ export const clients: IUser[] = [
     address: { city: "Fortaleza", state: "CE" }
   },
   {
+    id: 11,
     fullName: "João Almeida",
     cpf: "999.999.999-99",
     contact: {
@@ -86,6 +96,7 @@ export const clients: IUser[] = [
     address: { city: "Vitória", state: "ES" }
   },
   {
+    id: 12,
     fullName: "Karla Rodrigues",
     cpf: "999.999.999-99",
     contact: {
@@ -95,6 +106,7 @@ export const clients: IUser[] = [
     address: { city: "Campo Grande", state: "MS" }
   },
   {
+    id: 13,
     fullName: "Lucas Souza",
     cpf: "999.999.999-99",
     contact: {
@@ -104,6 +116,7 @@ export const clients: IUser[] = [
     address: { city: "Belém", state: "PA" }
   },
   {
+    id: 14,
     fullName: "Mariana Rocha",
     cpf: "999.999.999-99",
     contact: {
@@ -113,6 +126,7 @@ export const clients: IUser[] = [
     address: { city: "Porto Alegre", state: "RS" }
   },
   {
+    id: 15,
     fullName: "Nathalia Martins",
     cpf: "999.999.999-99",
     contact: {
@@ -122,6 +136,7 @@ export const clients: IUser[] = [
     address: { city: "São Paulo", state: "SP" }
   },
   {
+    id: 16,
     fullName: "Otávio Carvalho",
     cpf: "999.999.999-99",
     contact: {
@@ -131,6 +146,7 @@ export const clients: IUser[] = [
     address: { city: "Recife", state: "PE" }
   },
   {
+    id: 17,
     fullName: "Patrícia Gomes",
     cpf: "999.999.999-99",
     contact: {
@@ -140,6 +156,7 @@ export const clients: IUser[] = [
     address: { city: "Brasília", state: "DF" }
   },
   {
+    id: 18,
     fullName: "Renato Barbosa",
     cpf: "999.999.999-99",
     contact: {
@@ -149,6 +166,7 @@ export const clients: IUser[] = [
     address: { city: "Santos", state: "SP" }
   },
   {
+    id: 19,
     fullName: "Silvia Teixeira",
     cpf: "999.999.999-99",
     contact: {
@@ -161,7 +179,10 @@ export const clients: IUser[] = [
 
 export const users: IUser[] = [
   {
+    id: 1,
     fullName: "João Eduardo Amorim Jardim",
+    cpf: "029.611.950-47",
+    birthDate: "16/12/2000",
     password: "#Joao1612",
     contact: { email: "joaoeduaj@gmail.com", phoneNumber: "(51) 9 9945-9277" },
     address: { city: "Nova Santa Rita", state: "RS" },
