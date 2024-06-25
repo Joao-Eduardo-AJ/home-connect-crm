@@ -12,7 +12,7 @@ import { usePathname, useRouter } from "next/navigation";
 export function Aside() {
   const pathname = usePathname();
 
-  if (pathname === "login") {
+  if (pathname === "/") {
     return <></>;
   }
 
@@ -61,11 +61,11 @@ export const Nav = () => {
           Listagem de Usuáros <PeopleAltOutlined fontSize="small" />
         </Button>
       )}
-      {pathname !== "/" && (
+      {pathname !== "/clients" && (
         <Button
           variant={{ type: "text" }}
           onClick={() => {
-            router.push("/");
+            router.push("/clients");
           }}
         >
           Listagem de Clientes <ManageAccountsOutlined fontSize="small" />
@@ -74,7 +74,7 @@ export const Nav = () => {
       <Button
         variant={{ type: "text" }}
         onClick={() => {
-          router.push("login");
+          router.push("/");
         }}
       >
         Sair <Logout fontSize="small" />
