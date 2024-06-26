@@ -7,14 +7,21 @@ const button = tv({
   variants: {
     type: {
       text: "justify-between whitespace-nowrap text-primary-1000 text-sm esm:text-base hover:scale-105 px-0",
-
       contained:
-        "justify-center bg-primary-600 text-gray-100 dark:bg-primary-900 esm:p-4 text-lg esm:text-xl",
+        "justify-center text-gray-100 esm:p-4 text-lg esm:text-xl hover:brightness-75",
       outlined: ""
+    },
+    color: {
+      primary: "bg-primary-600 dark:bg-primary-900",
+      warning: "bg-gray-600 dark:bg-gray-900",
+      error: "bg-red-600 dark:bg-red-900",
+      success: "bg-green-600 dark:bg-green-900",
+      text: "bg-opacity-0"
     }
   },
   defaultVariants: {
-    type: "text"
+    type: "text",
+    color: "primary"
   }
 });
 

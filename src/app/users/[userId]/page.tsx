@@ -2,14 +2,9 @@
 
 import { Button, Input } from "@/components";
 import { users } from "@/mock";
-import { FormEventHandler, InputHTMLAttributes, useState } from "react";
 
 interface IProps {
   params: { userId?: number };
-}
-
-interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  label: string;
 }
 
 function UserDetails({ params }: IProps) {
@@ -24,10 +19,10 @@ function UserDetails({ params }: IProps) {
 
   return (
     <main className="flex flex-col items-center p-4">
-      <h2>Cadastro do usuário {user?.fullName}</h2>
+      <h2 className="font-extrabold text-xl text-gray-900 dark:text-gray-200">Cadastro do usuário {user?.fullName}</h2>
       <form className="grid md:grid-cols-2 gap-x-6 gap-y-2" onSubmit={handleSubmit}>
         <Input label="Name" name="name" defaultValue={user?.fullName}/>
-        <Input label="Id" name="Id" defaultValue={user?.id}/>
+        <Input label="Id" name="Id" defaultValue={user?.id} disabled/>
         <Input label="Cpf" name="cpf" defaultValue={user?.cpf}/>
         <Input label="birthdate" name="birthdate" defaultValue={user?.birthDate}/>
         <Input label="phone" name="phone" defaultValue={user?.contact.phoneNumber}/>

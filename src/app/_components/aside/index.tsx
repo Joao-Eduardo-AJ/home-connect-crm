@@ -53,7 +53,7 @@ export const Nav = () => {
     <nav>
       {pathname !== "/users" && (
         <Button
-          variant={{ type: "text" }}
+          variant={{ color: "text" }}
           onClick={() => {
             router.push("/users");
           }}
@@ -63,7 +63,7 @@ export const Nav = () => {
       )}
       {pathname !== "/clients" && (
         <Button
-          variant={{ type: "text" }}
+          variant={{ color: "text" }}
           onClick={() => {
             router.push("/clients");
           }}
@@ -72,7 +72,7 @@ export const Nav = () => {
         </Button>
       )}
       <Button
-        variant={{ type: "text" }}
+        variant={{ color: "text" }}
         onClick={() => {
           router.push("/");
         }}
